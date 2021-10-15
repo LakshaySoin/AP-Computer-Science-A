@@ -19,34 +19,41 @@ public class Calender {
     public static void insideCalendar (int days, int sunday) {
         int i = 1;
         if(sunday > 1) {
-            for(i = 0; i < -sunday + 8; i++)
+            int x = 0;
+            while (x < -sunday + 8) {
                 System.out.print("|      ");
+                x++;
+            }
         }
-        for(i = 1; i <= days; i++) {
-            if((i + (8-sunday)) % 7 == 0){
-                if(i< 10) {
-                    System.out.println("|   " + i + "  |");
+        int n = 1;
+        while (n <= days) {
+            if((n + (8-sunday)) % 7 == 0){
+                if(n < 10) {
+                    System.out.println("|   " + n + "  |");
                 }
                 else{
-                    System.out.println("|  " + i + "  |");
+                    System.out.println("|  " + n + "  |");
                 }
             }
             else {
-                if(i< 10) {
-                    System.out.print("|   " + i + "  ");
+                if(n < 10) {
+                    System.out.print("|   " + n + "  ");
                 }
                 else{
-                    System.out.print("|  " + i + "  ");
+                    System.out.print("|  " + n + "  ");
                 }
             }
+            n++;
         }
         if ((i-1 + (8-sunday)) % 7 == 0) {
             System.out.println("+------+------+------+------+------+------+------+");
 
         }
         else {
-            for(i = days+1; (i + (8-sunday)) % 7 != 0; i++ ){
+            int x = days + 1;
+            while ((x + (8-sunday)) % 7 != 0){
                 System.out.print("|      ");
+                x++;
             }
             System.out.print("|      ");
             System.out.println("|");

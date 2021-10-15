@@ -1,4 +1,4 @@
-package main.java.projects;
+package main.java.apcs;
 
 import java.util.Scanner;
 import java.text.DecimalFormat;

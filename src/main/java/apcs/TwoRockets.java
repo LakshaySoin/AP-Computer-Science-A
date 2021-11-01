@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 public class TwoRockets {
     public static void main(String[] args) {
         triangle();

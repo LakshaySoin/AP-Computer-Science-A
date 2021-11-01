@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 public class Rotating {
     public static final String nums = "12340";
     public static final int reps = 50;

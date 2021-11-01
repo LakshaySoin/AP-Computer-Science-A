@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 public class HelloDiamond {
     public static void main(String[] args) {
         top();

@@ -1,21 +1,21 @@
-package main.java.apcs;
-
-import java.util.Scanner;
+import java.util.*;
 
 public class test {
-    public static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        int ans = 0;
-        int cnt = 0;
-        while (cnt < 3) {
-            while (!scanner.hasNextInt()) {
-                scanner.next();
-                System.out.println("Please enter integer, try again");
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        System.out.print(n + " --> ");
+        while (n != 1) {
+            if (n % 2 == 0) {
+                n /= 2;
+            } else {
+                n = (n * 3) + 1;
             }
-            int num = scanner.nextInt();
-            ans += num;
-            cnt++;
+            if (n != 1) {
+                System.out.print(n + " --> ");
+            } else {
+                System.out.println(n);
+            }
         }
-        System.out.println("The average of the numbers is " + ans / cnt);
     }
 }

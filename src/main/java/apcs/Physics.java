@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 public class Physics {
     public static void main(String[] args) {
         double s0 = 0;

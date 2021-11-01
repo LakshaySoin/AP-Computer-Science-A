@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 import java.awt.*;
 
 public class ColorWheel {

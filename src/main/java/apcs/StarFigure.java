@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 public class StarFigure {
     public static final int length = 6;
     public static void main(String[] args) {

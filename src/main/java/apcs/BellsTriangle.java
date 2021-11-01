@@ -1,5 +1,3 @@
-package main.java.apcs;
-
 public class BellsTriangle {
     public static void main(String[] args) {
         int[] previous = new int[1];
